@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #87CEEB; /* Light sky blue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.snowman {
+  position: relative;
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.snowman-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.snowman-bottom,
+.snowman-middle,
+.snowman-top {
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.snowman-bottom {
+  width: 120px;
+  height: 120px;
+}
+
+.snowman-middle {
+  width: 150px;
+  height: 150px;
+}
+
+.buttons {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  margin-bottom: 10px;
+}
+
+.b1{
+  background-color: black;
+  position: absolute;
+  top: 40px;
+  left: 67px;
+  width: 15px;
+  height: 15px;
+  border-radius: 80%;
+}
+
+.b2 {
+  background-color: black;
+  position: absolute;
+  top: 70px;
+  left: 67px;
+  width: 15px;
+  height: 15px;
+  border-radius: 80%;
+}
+
+.b3 {
+  background-color: black;
+  position: absolute;
+  top: 100px;
+  left: 67px;
+  width: 15px;
+  height: 15px;
+  border-radius: 80%;
+}
+
+.snowman-top {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 5px;
+}
+
+.snowman-face {
+  position: absolute;
+  top: 40px;
+}
+
+.snowman-eyes {
+  display: flex;
+  justify-content: space-between;
+  width: 45px;
+  margin-bottom: 10px;
+}
+
+.snowman-eye-left,
+.snowman-eye-right {
+  background-color: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 80%;
+}
+
+.snowman-nose {
+  background-color: orange;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  transform: rotate(45deg);
+}
+
+.snowman-hat {
+  position: absolute;
+  top: -90px;
+  width: 120px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hat-rim {
+  background-color: red;
+  width: 80px;
+  height: 20px;
+}
+
+.hat-brim {
+  background-color: #000;
+  width: 125px;
+  height: 20px;
+}
+
+.hat-top {
+  background-color: #000;
+  width: 80px;
+  height: 70px;
+  border-radius: 5px 5px 0 0;
+}
+
+.shawl {
+  position: absolute;
+  top: 100px;
+  bachground-color: red;
+  width: 200px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.tree {
+  position: relative;
+  width: 200px;
+  height: 400px;
+}
+
+.tree-part {
+  background-color: transparent transparent green transparent; /* Tree Green */
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  position: absolute;
+  top: 10px;
+  margin: 0 auto;
+}
+
+.tree-top {
+  border-bottom: 100px solid #228B22;
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  position: absolute;
+  top: 22px;
+  margin: 0 auto;
+}
+
+.tree-middle {
+  border-bottom: 100px solid #228B22;
+  top: 140px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  position: absolute;
+  top: 100px;
+  margin: 0 auto;
+}
+
+.tree-bottom {
+  border-bottom: 100px solid #228B22;
+  top: 240px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  position: absolute;
+  top: 180px;
+  margin: 0 auto;
+}
+
+.tree-trunk {
+  background-color: #8B4513; /* Brown trunk */
+  width: 30px;
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tree-decorations .decoration {
+  background-color: red;
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.tree-decorations .decoration:nth-child(2) {
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
+  background-color: yellow;
+}
+.tree-decorations .decoration:nth-child(3) {
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
+  background-color: blue;
+}
+.tree-decorations .decoration:nth-child(4) {
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
+  background-color: pink;
+}
+.tree-decorations .decoration:nth-child(5) {
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
+  background-color: purple;
+}
