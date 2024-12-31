@@ -46,6 +46,12 @@ body {
   height: 150px;
 }
 
+.snowman-top {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 5px;
+}
+
 .buttons {
   position: absolute;
   display: flex;
@@ -54,40 +60,27 @@ body {
   margin-bottom: 10px;
 }
 
-.b1{
+.b1, .b2, .b3 {
   background-color: black;
   position: absolute;
-  top: 40px;
-  left: 67px;
   width: 15px;
   height: 15px;
-  border-radius: 80%;
+  border-radius: 50%;
+}
+
+.b1 {
+  top: 40px;
+  left: 67px;
 }
 
 .b2 {
-  background-color: black;
-  position: absolute;
   top: 70px;
   left: 67px;
-  width: 15px;
-  height: 15px;
-  border-radius: 80%;
 }
 
 .b3 {
-  background-color: black;
-  position: absolute;
   top: 100px;
   left: 67px;
-  width: 15px;
-  height: 15px;
-  border-radius: 80%;
-}
-
-.snowman-top {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 5px;
 }
 
 .snowman-face {
@@ -107,7 +100,7 @@ body {
   background-color: black;
   width: 10px;
   height: 10px;
-  border-radius: 80%;
+  border-radius: 50%;
 }
 
 .snowman-nose {
@@ -152,11 +145,11 @@ body {
 
 .shawl {
   position: absolute;
-  top: 100px;
-  bachground-color: red;
-  width: 200px;
-  height: 10px;
-  border-radius: 50%;
+  top: 115px;
+  background-color: red; /* Fixed typo here */
+  width: 40px;
+  height: 15px;
+  border-radius: 40%;
 }
 
 .tree {
@@ -166,20 +159,17 @@ body {
 }
 
 .tree-part {
-  background-color: transparent transparent green transparent; /* Tree Green */
-  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
+  background-color: transparent;
   border-left: 100px solid transparent;
   border-right: 100px solid transparent;
   position: absolute;
   top: 10px;
   margin: 0 auto;
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
 }
 
 .tree-top {
   border-bottom: 100px solid #228B22;
-  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
   position: absolute;
   top: 22px;
   margin: 0 auto;
@@ -187,21 +177,15 @@ body {
 
 .tree-middle {
   border-bottom: 100px solid #228B22;
-  top: 140px;
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
-  position: absolute;
   top: 100px;
+  position: absolute;
   margin: 0 auto;
 }
 
 .tree-bottom {
   border-bottom: 100px solid #228B22;
-  top: 240px;
-  border-left: 100px solid transparent;
-  border-right: 100px solid transparent;
-  position: absolute;
   top: 180px;
+  position: absolute;
   margin: 0 auto;
 }
 
@@ -217,26 +201,25 @@ body {
 
 .tree-decorations .decoration {
   background-color: red;
-  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
   width: 15px;
   height: 15px;
   border-radius: 50%;
   position: absolute;
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
 }
 
 .tree-decorations .decoration:nth-child(2) {
-  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
   background-color: yellow;
 }
+
 .tree-decorations .decoration:nth-child(3) {
-  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
   background-color: blue;
 }
+
 .tree-decorations .decoration:nth-child(4) {
-  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
   background-color: pink;
 }
+
 .tree-decorations .decoration:nth-child(5) {
-  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .5));
   background-color: purple;
 }
